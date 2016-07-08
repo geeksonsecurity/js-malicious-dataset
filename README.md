@@ -1,6 +1,9 @@
 # Malicious Javascript Dataset
 
-This repository contains a list of sorted malicious JavaScripts collected from time to time.
+> **DISCLAMER** This repository contains harmful code aka you should know what you are doing! The maintainer cannot be held responsible for *dumb* or *illegal* usage of the content.
+
+
+This repository contains a list of pseudo-sorted malicious JavaScripts collected from time to time.
 
 ## Current dataset size (April 2016):
 - 1084 HTML files
