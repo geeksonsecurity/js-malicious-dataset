@@ -4,10 +4,10 @@
 
 This repository contains a list of pseudo-sorted malicious JavaScripts collected from time to time.
 
-## Current dataset size (April 2016):
-- 1084 HTML files
-- 1350 JS files
-- 425 skipped files
+## Current dataset size (January 2017):
+- 1156 HTML files
+- 1357 JS files
+- 33 skipped files
 
 ## Contributions are very welcome
 
