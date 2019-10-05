@@ -9,7 +9,7 @@ This repository contains a list of pseudo-sorted malicious JavaScripts collected
 - 1357 JS files
 - 33 skipped files
 
-## Contributions are very welcome
+## Contributions are very welcome
 
 In order to automatically process the samples I'd like the contributors to keep the following *guidelines*:
 * Malicious JavaScript samples must have either `.html` or `.js` extension
